@@ -19,7 +19,7 @@ function nSumTarget(
     */
   let sz = nums.length;
   // 返回的是符合要求的元素存入到数组当中
-  let res = [];
+  let res: number[][] = [];
   if (n < 2 || sz < n) return res;
   // base: 2数之和；后面的多数之和都是根据2sum来的
   if (n == 2) {
