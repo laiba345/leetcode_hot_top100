@@ -31,3 +31,9 @@ function letterCombinations(digits: string): string[] {
   }
   return queue;
 }
+
+/* 
+  字符之间的拼接直接使用 + 号来进行；
+  非常关键；
+    
+*/
