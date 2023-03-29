@@ -29,9 +29,11 @@ function backtrack(
   if (left < 0 || right < 0) return;
   // 左括号数量和右括号数量全部匹配完了
   if (left == 0 && right == 0) {
+    // res用来存放最后的结果，track用来每次的可能性
     res.push(track.join(""));
     return;
   }
+  // 对于回溯操作
   track.push("(");
   backtrack(left - 1, right, track, res);
   track.pop();
